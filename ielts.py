@@ -4,14 +4,14 @@ from flask_session import Session
 from werkzeug.security import check_password_hash, generate_password_hash
 from helpers import login_required
 
-team = Flask(__name__)
+ielts = Flask(__name__)
 
-team.config["TEMPLATES_AUTO_RELOAD"] = True
-team.config["SESSION_PERMANENT"] = False
-team.config["SESSION_TYPE"] = "filesystem"
-Session(team)
+ielts.config["TEMPLATES_AUTO_RELOAD"] = True
+ielts.config["SESSION_PERMANENT"] = False
+ielts.config["SESSION_TYPE"] = "filesystem"
+Session(ielts)
 
-# db = SQL("sqlite:///team.db")
+# db = SQL("sqlite:///ielts.db")
 
 @ielts.after_request
 def after_request(response):
