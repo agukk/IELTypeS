@@ -13,14 +13,14 @@ Session(team)
 
 # db = SQL("sqlite:///team.db")
 
-@team.after_request
+@ielts.after_request
 def after_request(response):
     response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"  # セキュリティ系
     response.headers["Expires"] = 0
     response.headers["Pragma"] = "no-cache"
     return response
 
-@team.route("/practice", methods=["GET"])
+@ielts.route("/practice", methods=["GET"])
 # @login_required
 def practice():
     return render_template("practice.html")
