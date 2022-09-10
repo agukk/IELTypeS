@@ -19,6 +19,16 @@ def after_request(response):
     response.headers["Pragma"] = "no-cache"
     return response
 
+@app.route("/")
+# @login_required
+def index():
+    return render_template("index.html")
+
+@app.route("/guide", methods=["GET"])
+# @login_required
+def guide():
+    return render_template("guide.html")
+
 @app.route("/practice", methods=["GET"])
 # TODO: 後で作る
 # @login_required
