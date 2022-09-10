@@ -34,8 +34,5 @@ def guide():
 # TODO: 後で作る
 # @login_required
 def practice():
-<<<<<<< HEAD
     return render_template("practice.html")
-=======
-    return render_template("practice.html")
->>>>>>> a31f8b911b94fe92dded052d8663e37646dd12b9
+
