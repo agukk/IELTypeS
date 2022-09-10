@@ -21,6 +21,7 @@ def after_request(response):
     return response
 
 @app.route("/practice", methods=["GET"])
+# TODO: 後で作る
 # @login_required
 def practice():
     return render_template("practice.html")
