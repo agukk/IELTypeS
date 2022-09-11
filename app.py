@@ -36,3 +36,6 @@ def guide():
 def practice():
     return render_template("practice.html")
 
+@app.route("/idiom", methods=["GET"])
+def idiom():
+    return render_template("idiom.html")
