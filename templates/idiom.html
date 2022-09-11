@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Prototype</title>
+    <link rel="stylesheet" href="/static/css/typing-styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="topic">
+            <p></p>
+        </div>
+        <input type="text" class="input-field">
+        <div class="content-box">
+            <div class="typing-text">
+                <p></p>
+            </div>
+            <div class="content">
+                <ul class="result-details">
+                    <li class="correct-types">
+                        <p>Correct Types : </p>
+                        <span>0</span>
+                    </li>
+                    <li class="miss-types">
+                        <p>Miss Types : </p>
+                        <span>0</span>
+                    </li>
+                    <li class="accuracy">
+                        <p>Accuracy : </p>
+                        <span></span> %
+                    </li>
+                </ul>
+                <button>Try Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/idioms_ja.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/idioms.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
