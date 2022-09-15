@@ -18,7 +18,7 @@ body {
 
 .wrapper {
     background: #fff;
-    width: 770px;
+    width: 830px;
     border-radius: 10px;
     padding: 35px;
 }
@@ -121,7 +121,7 @@ body {
 .content .result-details {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: calc(100% - 140px);
 }
 
 .result-details li {
@@ -133,15 +133,15 @@ body {
 
 .result-details li:not(:first-child) {
     border-left: 1px solid #ccc;
-    padding-left: 22px;
+    padding-left: 23px;
 }
 
 .result-details li p {
-    font-size: 19px;
+    font-size: 18px;
 }
 
 .result-details li span {
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     margin-left: 10px;
 }

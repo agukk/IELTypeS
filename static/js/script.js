@@ -1,12 +1,17 @@
-const topicText = document.querySelector(".topic p")
+const topicText = document.querySelector(".topic p");
 const typingText = document.querySelector(".typing-text p");
 let inpField = document.querySelector(".wrapper .input-field");
 let correctTag = document.querySelector(".correct-types span");
 let mistakeTag = document.querySelector(".miss-types span");
 let accuracyTag = document.querySelector(".accuracy span");
+let timeTag = document.querySelector(".time span b");
 let tryAgainBtn = document.querySelector("button");
 
+let timer;
+let maxTime = 60;
+let timeLeft = maxTime;
 let charIndex = correctTypes = mistakes = 0;
+let isTyping = false;
 
 function randomParagraph() {
     // getting random number and it'll always less than the idioms length
@@ -33,6 +38,12 @@ function randomParagraph() {
 function initTyping() {
     const characters = typingText.querySelectorAll("span");
     let typedChar = inpField.value.split("")[charIndex];
+    if(!isTyping)
+    {
+        // once timer is start, it won't restart again on every key clicked
+        timer = setInterval(initTimer, 1000);
+        isTyping = true;
+    }
 
     // if user hasn't entered any character or pressed backspace
     if(typedChar == null)
@@ -75,11 +86,26 @@ function initTyping() {
     accuracyTag.innerHTML = accuracy;
 }
 
+function initTimer() {
+    // if timeLeft is greater than 0 then decrement the timeLeft else clear the timer
+    if(timeLeft > 0)
+    {
+        timeLeft--;
+        timeTag.innerHTML = timeLeft;
+    }
+    else
+    {
+        clearInterval(timer);
+    }
+}
+
 function resetTyping() {
     // calling randomParagraph function and reseting each variables and elements value to default
     randomParagraph();
     inpField.value = "";
+    timeLeft = maxTime;
     charIndex = correctTypes = mistakes = 0;
+    timeTag.innerHTML = timeLeft;
     correctTag.innerHTML = 0;
     mistakeTag.innerHTML = 0;
     accuracyTag.innerHTML = "";
