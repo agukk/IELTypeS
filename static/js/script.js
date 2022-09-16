@@ -49,15 +49,6 @@ function initTyping() {
     if(typedChar == null)
     {
         charIndex--; // decrement charIndex
-        // decrement mistakes and correctTypes only if the charIndex span contains incorrect class and correct class
-        if(characters[charIndex].classList.contains("incorrect"))
-        {
-            mistakes--;
-        }
-        else
-        {
-            correctTypes--;
-        }
         characters[charIndex].classList.remove("correct", "incorrect");
     }
     else
@@ -65,8 +56,16 @@ function initTyping() {
         if(characters[charIndex].innerHTML === typedChar)
         {
             // if user typed character and shown character matched, increment the correctTypes and add the correct class 
-            correctTypes++
+            correctTypes++;
             characters[charIndex].classList.add("correct");
+
+            // if user type all text, generate a new typing text
+            if(charIndex + 1 === characters.length)
+            {
+                randomParagraph();
+                charIndex = -1;
+                inpField.value = "";
+            }
         }
         else 
         {
@@ -76,6 +75,7 @@ function initTyping() {
         }
         charIndex++; // increment charIndex either user typed correct or incorrect character
     }
+    
     characters.forEach((char) => char.classList.remove("active"));
     characters[charIndex].classList.add("active");
 
