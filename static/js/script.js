@@ -8,7 +8,7 @@ let timeTag = document.querySelector(".time span b");
 let tryAgainBtn = document.querySelector("button");
 
 let timer;
-let maxTime = 60;
+let maxTime = 5;
 let timeLeft = maxTime;
 let charIndex = correctTypes = mistakes = 0;
 let isTyping = false;
@@ -96,6 +96,8 @@ function initTimer() {
     else
     {
         clearInterval(timer);
+        // move to result page
+        window.location.href = "/result";
     }
 }
 
