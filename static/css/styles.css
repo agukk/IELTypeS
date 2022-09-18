@@ -6,7 +6,5 @@
 
 #cards
 {
-    margin-top :50px;
-    margin-left: 210px;
-    margin-bottom: 200px;
+    justify-content: center;
 }

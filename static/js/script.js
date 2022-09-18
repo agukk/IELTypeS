@@ -96,8 +96,6 @@ function initTimer() {
     else
     {
         clearInterval(timer);
-        // move to result page
-        window.location.href = "/result";
     }
 }
 
