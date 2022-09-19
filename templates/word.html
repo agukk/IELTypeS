@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idiom</title>
+    <link rel="stylesheet" href="/static/css/wordTyping-styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="topic">
+            <p></p>
+        </div>
+        <input type="text" class="input-field">
+        <div class="content-box">
+            <div class="typing-text">
+                <p></p>
+            </div>
+            <div class="content">
+                <ul class="result-details">
+                    <li class="time">
+                        <p>Time :</p>
+                        <span><b>5</b>s</span>
+                    </li>
+                    <li class="correct-types">
+                        <p>Correct : </p>
+                        <span>0</span>
+                    </li>
+                    <li class="miss-types">
+                        <p>Miss : </p>
+                        <span>0</span>
+                    </li>
+                    <li class="accuracy">
+                        <p>Accuracy : </p>
+                        <span></span> %
+                    </li>
+                </ul>
+                <button>Try Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/words_ja.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/words.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/word_script.js') }}"></script>
+</body>
+</html>
