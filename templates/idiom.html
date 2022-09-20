@@ -41,6 +41,38 @@
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal-wrapper">
+        <div class="modal-content-box">
+            <div class="title">
+                <h1 class="typing-score">
+                    Score : <span></span> 
+                </h1>
+            </div>
+            <div class="modal-content">
+                <div class="result-detail">
+                    <p class="modal-ct">
+                        Correct Type : <span></span>
+                    </p>
+                    <p class="modal-mt">
+                        Miss Type : <span></span>
+                    </p>
+                    <p class="modal-accuracy">
+                        Accuracy : <span></span> %
+                    </p>
+                </div>
+                <div class="event-button">
+                    <button class="againBtn">
+                        Again
+                    </button>
+                    <button class="homeBtn">
+                        Home
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="{{ url_for('static', filename='js/idioms_ja.js') }}"></script>
     <script src="{{ url_for('static', filename='js/idioms.js') }}"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
