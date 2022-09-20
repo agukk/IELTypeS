@@ -25,6 +25,12 @@ function randomParagraph() {
     // getting random number and it'll always less than the words length
     let randIndex = Math.floor(Math.random() * words.length);
 
+    // Call Web Speech Synthesis API function to read out English words 
+    let speak = new SpeechSynthesisUtterance();
+    speak.text = words[randIndex];
+    speak.lang = 'en-US';
+    speechSynthesis.speak(speak);
+
     // insert topic above the typing text
     topicText.innerHTML = words_ja[randIndex];
 
