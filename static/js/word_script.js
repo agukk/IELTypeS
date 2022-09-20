@@ -16,7 +16,7 @@ let againBtn = document.querySelector(".againBtn");
 let homeBtn = document.querySelector(".homeBtn");
 
 let timer;
-let maxTime = 5;
+let maxTime = 60;
 let timeLeft = maxTime;
 let charIndex = correctTypes = mistakes = 0;
 let isTyping = false;

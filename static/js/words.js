@@ -1,5 +1,9 @@
 const words = [
-    'word1',
-    'word2',
-    'word3',
-]
+    "schedule",
+    "management",
+    "leadership",
+    "questionnaire",
+    "statistic",
+    "assessment", 
+    "revision",
+];
