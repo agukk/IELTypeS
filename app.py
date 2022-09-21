@@ -44,3 +44,11 @@ def idiom():
 @app.route("/result", methods=["GET"])
 def result():
     return render_template("result.html")
+
+@app.route("/word", methods=["GET"])
+def word():
+    return render_template("word.html")
+
+@app.route("/essay", methods=["GET"])
+def essay():
+    return render_template("essay.html")
