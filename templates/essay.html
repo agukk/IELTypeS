@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essay</title>
+    <link rel="stylesheet" href="/static/css/essay.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="topic">
+            <p></p>
+        </div>
+        <input type="text" class="input-field">
+        <div class="content-box">
+            <div class="typing-text">
+                <p></p>
+            </div>
+            <div class="content">
+                <ul class="result-details">
+                    <li class="correct-types">
+                        <p>Correct : </p>
+                        <span>0</span>
+                    </li>
+                    <li class="miss-types">
+                        <p>Miss : </p>
+                        <span>0</span>
+                    </li>
+                    <li class="accuracy">
+                        <p>Accuracy : </p>
+                        <span></span> %
+                    </li>
+                </ul>
+                <button>Try Again</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-wrapper">
+        <div class="modal-content-box">
+            <div class="title">
+                <h1 class="typing-score">
+                    Score : <span></span> 
+                </h1>
+            </div>
+            <div class="modal-content">
+                <div class="result-detail">
+                    <p class="modal-ct">
+                        Correct Type : <span></span>
+                    </p>
+                    <p class="modal-mt">
+                        Miss Type : <span></span>
+                    </p>
+                    <p class="modal-accuracy">
+                        Accuracy : <span></span> %
+                    </p>
+                </div>
+                <div class="event-button">
+                    <button class="againBtn">
+                        Again
+                    </button>
+                    <button class="homeBtn">
+                        Home
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/essay_topic.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/sample_essay.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/essay_script.js') }}"></script>
+</body>
+</html>

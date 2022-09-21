@@ -48,3 +48,7 @@ def result():
 @app.route("/word", methods=["GET"])
 def word():
     return render_template("word.html")
+
+@app.route("/essay", methods=["GET"])
+def essay():
+    return render_template("essay.html")
