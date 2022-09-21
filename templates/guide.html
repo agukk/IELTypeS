@@ -2,90 +2,139 @@
 
 <html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- http://getbootstrap.com/docs/5.1/ -->
-        <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
-        <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"></script>
+  <!-- http://getbootstrap.com/docs/5.1/ -->
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+  <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"></script>
 
-        <link href="/static/css/styles.css" rel="stylesheet">
+  <link href="/static/css/styles.css" rel="stylesheet">
 
-        <title>Mainpage</title>
-        </head>
+  <title>Mainpage</title>
+</head>
 
-        <body>
-            <h1 style="text-align:center; color:red; font-size:50px">IELTypeS</h1>
-            <div class="card text-center">
-                <div class="card-header">
-                  <ul class="nav nav-tabs card-header-tabs">
-                    <li class="nav-item">
-                      <a class="nav-link" href="/">TOP</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="true" href="/guide">GUIDE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="practice">PRACTICE</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/">QUICKTEST</a>
-                      </li>
-                  </ul>
-                </div>
+<body>
+  <div id="guide">
+    <header class="page-header">
 
-            <h1 style="textalign:center">事前準備するもの</h1>
-            IELTS受験の申し込みにあたっては、「試験日当日まで有効期限内のパスポート」が必要です。<br>
+      <h1 class="page-title">IELTypeS</h1>
+
+
+      <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link" href="/">TOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="true" href="/guide">GUIDE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="practice">PRACTICE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">QUICKTEST</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <article id="guide-article">
+      <div class="wrapper">
+        <main id="guide-main">
+          <section class="guide-section">
+            <h1 id="preparation">事前準備するもの</h1>
+            IELTS受験の申し込みにあたっては、<span>「試験日当日まで有効期限内のパスポート」</span>が必要です。<br>
             試験当日はパスポート（原本）の持参が必要になります。<br>
             申し込み後、受験確認書をダウンロードし、「当日の会場」「集合時間」「受験番号」を確認してください。<br>
             <br>
-
-            <h1 style="textalign:center">持ち物リスト</h1>
-                IELTSには複数の運営団体があり、それぞれ持ち物が若干異なります。<br>
-                <br>
+          </section>
+          <section class="guide-section">
+            <h1 id="list-of-things">持ち物リスト</h1>
+            IELTSには複数の運営団体があり、それぞれ持ち物が若干異なります。
+            <div class="wrapper">
+              <section class="guide-subsection">
                 <h3>日本英検協会の場合</h3>
                 <li>鉛筆 ※黒の鉛筆のみ、シャープペンシル不可</li>
                 <li>消しゴム ※カバーを外し、落書き等ないもの</li>
                 <li>パスポート（原本）※申し込みに使用したもの</li>
                 <li>パスポートのカラーコピー</li>
                 <br>
+              </section>
+              <section class="guide-subsection">
                 <h3>British Council / IDP / JSAFの場合</h3>
                 <li>パスポート（原本）※申し込みに使用したもの</li><br>
+              </section>
+            </div>
+            <!--終了 .wrapper-->
 
-                <h4>任意で持ち込み可能なもの</h4>
-                <li>眼鏡 ※当日朝の受付時にチェックのうえ、持ち込み可能</li>
-                <li>飲み物 ※水のみ持ち込み可能だが、無色透明でラベルのない容器に入れる必要あり</li>
+            <span>任意で持ち込み可能なもの</span>
+            <li>眼鏡 ※当日朝の受付時にチェックのうえ、持ち込み可能</li>
+            <li>飲み物 ※水のみ持ち込み可能、無色透明でラベルのない容器に入れる必要あり</li>
             <br>
             【注意事項】<br>
             試験会場に持ち込みできるのは上記のみです。<br>
             腕時計などをつけたまま受験すると不正行為とみなされるため、注意してください。<br>
             その他、特別な事情で試験に持ち込みが必要なものがある場合は、事前に運営団体に申請してください。<br>
             <br>
-            <h1 style="textalign:center">試験当日の流れ</h1>
+          </section>
+          <section class="guide-section">
+            <h1 id="test-day">試験当日の流れ</h1>
+            事前に試験当日の流れを把握することは非常に重要です。<br>
+            気持ちに余裕を持って試験に臨むことができるように、確認しておきましょう。<br>
             <br>
-            <h3>家を出る前に確認すること</h3>
-            上記の持ち物があるか、今一度確認してください。<br>
-            試験当日の服装ですが、大きく英語が印刷された服は不正行為にあたる可能性があるため、シンプルなものを選ぶと良いでしょう。<br>
-            遅刻は厳禁です。受験票に記載の受付時間の約20分前には会場に到着できるよう、余裕をもって家を出ましょう。
+            <section class="guide-subsection">
+              <h3>家を出る前に確認すること</h3>
+              上記の持ち物があるか、今一度確認してください。<br>
+              服装は原則自由ですが、大きく英語が印字されたものは不正行為にあたる可能性があるため、シンプルなものを選びましょう。<br>
+              遅刻は厳禁です。受験票に記載の受付時間の約20分前には会場に到着できるよう、余裕をもって家を出ましょう。<br>
+              <br>
+            </section>
             <br>
-            <br>
-            <h3>試験会場に到着してからの流れ</h3>
-            １．上記の持ち物以外はテストセンターに預ける<br>
-            ２．受付前にトイレを済ませる<br>
-            ３．受付にて本人確認と持ち物確認を行う<br>
-            ４．係員の指示に従い、写真撮影・指紋登録を行う<br>
-            ５．試験会場に入室、自分の受験番号が記載されている座席に着席して待機<br>
-            ※机のラベルに記載されている内容が成績証明書に反映されるため、必ず確認してください。<br>
-            内容に誤りがある場合は必ず筆記テスト終了後に試験監督者まで知らせてください。<br>
+            <section class="guide-subsection">
+              <h3>試験会場に到着してからの流れ</h3>
+              １．上記の持ち物以外はテストセンターに預ける<br>
+              ２．受付前にトイレを済ませる<br>
+              ３．受付にて本人確認と持ち物確認を行う<br>
+              ４．係員の指示に従い、写真撮影・指紋登録を行う<br>
+              ５．試験会場に入室、自分の受験番号が記載されている座席に着席して待機<br>
+              ※机のラベルに記載されている内容が成績証明書に反映されるため、必ず確認してください。<br>
+              内容に誤りがある場合は必ず筆記テスト終了後に試験監督者まで知らせてください。<br>
+              <br>
+            </section>
             <br>
             【注意事項】<br>
             IELTSの試験は、ペーパー試験の場合、Writing → Reading → Listening → Speaking の順番で、<br>
             コンピューター試験の場合、Listening → Reading → Writing → Speaking の順番で行われます。<br>
             いずれにおいても、Speaking以外の３つは連続して行われ、途中休憩はありません。<br>
-            体調不良等、やむを得ない事情がある場合を除き原則退室禁止です。<br>
+            体調不良等、やむを得ない事情がある場合を除き<span>原則退室禁止</span>です。<br>
             トイレのため一時退室・再入室が可能な場合もありますが、試験時間の延長はないため、必ず事前にトイレ等を済ませましょう。
 
             <br>
             <br>
+          </section>
+
+        </main>
+        <aside id="guide-menu">
+          <section class="menu-section">
+            <h2>目次</h2>
+            <br>
+            <ul>
+              <li><a href="#preparation">事前準備するもの</a></li>
+              <li><a href="#list-of-things">持ち物リスト</a></li>
+              <li><a href="#test-day">試験当日の流れ</a></li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+      <!--終了 .wrapper-->
+    </article>
+  </div>
+  <!--終了 #guide-->
+</body>
