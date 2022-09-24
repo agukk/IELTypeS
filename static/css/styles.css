@@ -1,10 +1,195 @@
+html {
+    font-size: 100%;
+    /*ブラウザ標準の文字サイズ（通常16px)やユーザーの設定した文字サイズを正しく表示する*/
+}
+
+body {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", "YuGothic",
+        "游ゴシック体", "ヒイラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+
+a {
+    text-decoration: none;
+    /*リンクの下線をなくす*/
+}
+
+img {
+    max-width: 100%;
+    /*画像の大きさ指定*/
+}
+
 .col {
     width: 250px;
     text-align: center;
 
 }
 
-#cards
-{
-    justify-content: center;
+#cards {
+    margin-top: 50px;
+    margin-left: 210px;
+    margin-bottom: 200px;
+}
+
+/*--HEADER
+  -------------*/
+.page-header {
+    margin: 0 auto;
+    /*画面の中央に配置する*/
+    padding: 0 4%;
+    /*左右に余白を付けてスマホなどの小さい画面でも余白を付けて見やすくなる*/
+}
+
+.page-title {
+    text-align: center;
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/*---ページのメイン部分
+  -------------------------------------------------*/
+#guide-article .wrapper {
+    margin: 3% auto;
+    /*画面の中央に配置する*/
+    padding: 0 4%;
+    /*左右に余白を付けてスマホなどの小さい画面でも余白を付けて見やすくなる*/
+    display: flex;
+    justify-content: space-between;
+}
+
+/*　記事部分　*/
+main {
+    width: 74%;
+}
+
+.guide-section {
+    margin-bottom: 4px;
+    padding: 0 10px;
+}
+
+.guide-section h1 {
+    font-size: 25px;
+    background-color: #cccccc;
+    text-align: center;
+    padding: 5px;
+    margin: 0 0 20px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.guide-section span {
+    font-weight: bold;
+}
+
+.guide-section .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.guide-subsection {
+    border: solid 1px #cccccc;
+    /* 記事を罫線で囲む*/
+    border-radius: 2%;
+    padding: 10px 35px;
+    margin-bottom: 10px;
+    /*記事と記事の間に適切な余白*/
+}
+
+.guide-subsection h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*　サイドバー　*/
+#guide-menu {
+    width: 22%;
+}
+
+.menu-section {
+    background-color: white;
+    border: solid 1px black;
+    /* 記事を罫線で囲む*/
+    border-radius: 2%;
+    padding: 20px 0;
+}
+
+#guide-menu h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#guide-menu li {
+    list-style: none;
+}
+
+/*---ページのメイン部分
+  -------------------------------------------------*/
+  #index-article .wrapper {
+    margin: 3% auto;
+    /*画面の中央に配置する*/
+    padding: 0 4%;
+    /*左右に余白を付けてスマホなどの小さい画面でも余白を付けて見やすくなる*/
+    display: flex;
+    justify-content: space-between;
+}
+
+/*　記事部分　*/
+main {
+    width: 74%;
+}
+
+.index-section {
+    margin-bottom: 4px;
+    padding: 0 10px;
+}
+
+.index-section h1 {
+    font-size: 25px;
+    background-color: #cccccc;
+    text-align: center;
+    padding: 5px;
+    margin: 0 0 20px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.index-section span {
+    font-weight: bold;
+}
+
+.index-section .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.index-subsection {
+    border: solid 1px #cccccc;
+    /* 記事を罫線で囲む*/
+    border-radius: 2%;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    /*記事と記事の間に適切な余白*/
+}
+
+.index-subsection h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*　サイドバー　*/
+#index-menu {
+    width: 22%;
+}
+
+#index-menu h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#index-menu li {
+    list-style: none;
 }
