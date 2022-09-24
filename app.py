@@ -66,3 +66,24 @@ def word():
 @app.route("/essay", methods=["GET"])
 def essay():
     return render_template("essay.html")
+
+@app.route("/create", methods=['GET', 'POST'])
+def create():
+    if request.method == "POST":
+        nickname = request.form.get('nickname')
+        location = request.form.get('location')
+        comment = request.form.get('comment')
+
+        post = Post(nickname=nickname, location=location, comment=comment) # 追加
+
+        db.session.add(post)
+        db.session.commit()
+        return redirect('/')
+    else:
+        return render_template("create.html")
+
+@app.route("/post", methods=['GET', 'POST'])
+def post():
+    if request.method == 'GET':
+        posts = Post.query.all()
+        return render_template('post.html', posts=posts)
