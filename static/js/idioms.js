@@ -14,5 +14,7 @@ const idioms = [
     "hindsight is 20/20",
     "bread and butter",
     "go Dutch",
-    "diamond in the rough"
+    "diamond in the rough",
+    "drop the ball",
+    "jump on the bandwagon",
 ];
