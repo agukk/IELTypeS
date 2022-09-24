@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: url("/static/images/night view in UK.jpg");
+    background-image: url("/static/images/night view in Boston.jpg");
     background-size:cover;
 }
 
@@ -21,7 +21,7 @@ body {
     width: 830px;
     border-radius: 10px;
     padding: 35px;
-    display: inline; 
+    display: inline;
 }
 
 .wrapper .input-field {

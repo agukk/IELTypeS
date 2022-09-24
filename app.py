@@ -1,4 +1,5 @@
 #  from cs50 import SQL
+from crypt import methods
 from flask import Flask, flash, redirect, render_template, request, session
 from flask_session import Session
 from werkzeug.security import check_password_hash, generate_password_hash
@@ -39,3 +40,15 @@ def practice():
 @app.route("/idiom", methods=["GET"])
 def idiom():
     return render_template("idiom.html")
+
+@app.route("/result", methods=["GET"])
+def result():
+    return render_template("result.html")
+
+@app.route("/word", methods=["GET"])
+def word():
+    return render_template("word.html")
+
+@app.route("/essay", methods=["GET"])
+def essay():
+    return render_template("essay.html")

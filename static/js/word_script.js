@@ -22,23 +22,23 @@ let charIndex = correctTypes = mistakes = 0;
 let isTyping = false;
 
 function randomParagraph() {
-    // getting random number and it'll always less than the idioms length
-    let randIndex = Math.floor(Math.random() * idioms.length);
+    // getting random number and it'll always less than the words length
+    let randIndex = Math.floor(Math.random() * words.length);
 
     // Call Web Speech Synthesis API function to read out English words 
     let speak = new SpeechSynthesisUtterance();
-    speak.text = idioms[randIndex];
+    speak.text = words[randIndex];
     speak.lang = 'en-US';
     speechSynthesis.speak(speak);
 
     // insert topic above the typing text
-    topicText.innerHTML = idioms_ja[randIndex];
+    topicText.innerHTML = words_ja[randIndex];
 
     typingText.innerHTML = "";
 
-    // getting random item from the idioms array, splitting all characters of it,
+    // getting random item from the words array, splitting all characters of it,
     // adding each character inside span and the adding this span inside p tag.
-    idioms[randIndex].split("").forEach((char) => {
+    words[randIndex].split("").forEach((char) => {
         let spanTag = `<span>${char}</span>`;
         typingText.innerHTML += spanTag;
     });
