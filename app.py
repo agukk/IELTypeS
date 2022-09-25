@@ -1,16 +1,30 @@
 #  from cs50 import SQL
-from crypt import methods
-from flask import Flask, flash, redirect, render_template, request, session
-from flask_session import Session
-from werkzeug.security import check_password_hash, generate_password_hash
-from helpers import login_required
+# from crypt import methods
+from flask import Flask, redirect, render_template, request
+from flask_sqlalchemy import SQLAlchemy #追加
+from datetime import datetime #追加
+import pytz
+# from flask_session import Session
+# from werkzeug.security import check_password_hash, generate_password_hash
+# from helpers import login_required
 
 app = Flask(__name__)
 
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
-Session(app)
+# Session(app)
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///post.db' #追加
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False #追加
+db = SQLAlchemy(app) #追加
+
+class Post(db.Model): #追加
+    id = db.Column(db.Integer, primary_key=True)
+    nickname = db.Column(db.String(80), nullable=False)
+    location = db.Column(db.String(30), nullable=False)
+    comment = db.Column(db.String(300), nullable=False)
+    time = db.Column(db.DateTime, nullable=False, default=datetime.now(pytz.timezone('Asia/Tokyo')))
 
 # db = SQL("sqlite:///ielts.db")
 
@@ -52,3 +66,24 @@ def word():
 @app.route("/essay", methods=["GET"])
 def essay():
     return render_template("essay.html")
+
+@app.route("/create", methods=['GET', 'POST'])
+def create():
+    if request.method == "POST":
+        nickname = request.form.get('nickname')
+        location = request.form.get('location')
+        comment = request.form.get('comment')
+
+        post = Post(nickname=nickname, location=location, comment=comment) # 追加
+
+        db.session.add(post)
+        db.session.commit()
+        return redirect('/')
+    else:
+        return render_template("create.html")
+
+@app.route("/post", methods=['GET', 'POST'])
+def post():
+    if request.method == 'GET':
+        posts = Post.query.all()
+        return render_template('post.html', posts=posts)
