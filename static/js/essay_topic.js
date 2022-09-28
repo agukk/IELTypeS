@@ -1,5 +1,14 @@
 const topic = [
-    'In recent times, many people are making the decision to live alone. What are the causes of this? Does it have positive or negative effects on society?',
-    'topic2',
-    'topic3'
+    "~という意見に賛成する", 
+    "~という意見に反対する", 
+    "~と言われている", 
+    "~というのは一般的である", 
+    "まず", 
+    "加えて", 
+    "さらに", 
+    "確かに", 
+    "私がこのような意見を持つ理由のひとつは~", 
+    "結論として～", 
+    "要約すると～", 
+    "総括すると～",
 ];
