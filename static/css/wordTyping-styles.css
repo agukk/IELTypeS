@@ -1,5 +1,6 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +14,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     background-image: url("/static/images/night view in Boston.jpg");
-    background-size:cover;
+    background-size: cover;
 }
 
 .wrapper {
@@ -152,7 +153,7 @@ body {
     width: 400px;
     border-radius: 10px;
     padding: 35px;
-    display: none; 
+    display: none;
 }
 
 .modal-wrapper .modal-content-box {
