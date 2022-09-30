@@ -1,13 +1,16 @@
+/*----全ページ共通----  */
 html {
     font-size: 100%;
     /*ブラウザ標準の文字サイズ（通常16px)やユーザーの設定した文字サイズを正しく表示する*/
 }
 
 body {
-    font-family: "Yu Gothic Medium", "游ゴシック Medium", "YuGothic",
-        "游ゴシック体", "ヒイラギノ角ゴ Pro W3", sans-serif;
-    line-height: 1.7;
-    color: #432;
+    font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", YuGothic, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Roboto, "Droid Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #000;
+    overflow-x: hidden;
+    background-color: #e4e4e4;
 }
 
 a {
@@ -30,26 +33,50 @@ img {
     justify-content: center;
 }
 
-/*--HEADER
-  -------------*/
+/*----全ページ共通　記事部分----*/
+main {
+    width: 100%;
+}
+
+/*----全ページ共通　ヘッター----*/
 .page-header {
     margin: 0 auto;
     /*画面の中央に配置する*/
-    padding: 0 4%;
+    padding: 0;
     /*左右に余白を付けてスマホなどの小さい画面でも余白を付けて見やすくなる*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
 }
 
 .page-title {
     text-align: center;
-    color: red;
+    color: rgb(185, 21, 21);
     font-size: 50px;
     font-weight: bold;
+    font-size: 3.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
 }
 
-/*---ページのメイン部分
-  -------------------------------------------------*/
+/*----全ページ共通　フッター----*/
+.footer {
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 0px;
+    font-size: 15px;
+    font-family: Georgia, serif;
+}
+
+/*--------------------TOP--------------------*/
+#typing-img {
+    margin: 0 auto;
+    text-align: center;
+    width: 97%;
+}
+
+/*--------------------GUIDE--------------------*/
 #guide-article .wrapper {
-    margin: 3% auto;
+    margin: 1% auto;
     /*画面の中央に配置する*/
     padding: 0 4%;
     /*左右に余白を付けてスマホなどの小さい画面でも余白を付けて見やすくなる*/
@@ -57,9 +84,10 @@ img {
     justify-content: space-between;
 }
 
-/*　記事部分　*/
-main {
-    width: 74%;
+#guide-main {
+    width: 75%;
+    background-color: rgb(255, 255, 255);
+    padding: 3%;
 }
 
 .guide-section {
@@ -68,16 +96,30 @@ main {
 }
 
 .guide-section h1 {
-    font-size: 25px;
-    background-color: #cccccc;
-    text-align: center;
-    padding: 5px;
-    margin: 0 0 20px;
-    border-bottom: 1px solid #cccccc;
+    position: relative;
+    overflow: hidden;
+    padding: 1rem 2rem 2rem 130px;
+    word-break: break-all;
+    border-top: 2px solid #000;
+    border-radius: 12px 0 0 0;
+    font-size: 30px;
+}
+
+.guide-section h1 span {
+    font-size: 2.9rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    padding: 3px 20px;
+    color: #fff;
+    border-radius: 10px 0 20px 10px;
+    background: #000;
 }
 
 .guide-section span {
     font-weight: bold;
+    color: rgb(185, 21, 21);
 }
 
 .guide-section .wrapper {
@@ -86,7 +128,7 @@ main {
 }
 
 .guide-subsection {
-    border: solid 1px #cccccc;
+    border: solid 2px #cccccc;
     /* 記事を罫線で囲む*/
     border-radius: 2%;
     padding: 10px 35px;
@@ -100,17 +142,22 @@ main {
     text-align: center;
 }
 
-/*　サイドバー　*/
+.guide-subsection li {
+    font-size: 17px;
+}
+
+/*　GUIDE サイドバー　*/
 #guide-menu {
     width: 22%;
 }
 
 .menu-section {
-    background-color: white;
+    background-color: #cacaca;
     border: solid 1px black;
     /* 記事を罫線で囲む*/
     border-radius: 2%;
     padding: 20px 0;
+    border: dotted;
 }
 
 #guide-menu h2 {
@@ -123,9 +170,104 @@ main {
     list-style: none;
 }
 
-/*---ページのメイン部分
-  -------------------------------------------------*/
-  #index-article .wrapper {
+/*--------------------PRACTICE--------------------*/
+
+#practice-main {
+    text-align: center;
+}
+
+#practice-main h1 {
+    position: relative;
+    display: inline-block;
+    padding: 0 45px;
+    margin-top: 10%;
+    text-align: center;
+    font-weight: 900;
+}
+
+#practice-main h1:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 44px;
+    height: 2px;
+    background-color: black;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+#practice-main h1:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 44px;
+    height: 2px;
+    background-color: black;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+#practice-main h1:before {
+    left: 0;
+}
+
+#practice-main h1:after {
+    right: 0;
+}
+
+.btn,
+a.btn,
+button.btn {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 3.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
+}
+
+a.btn--orange {
+    color: #fff;
+    background-color: #eb6100;
+    border-bottom: 5px solid #b84c00;
+}
+
+a.btn--orange:hover {
+    margin-top: 3px;
+    color: #fff;
+    background: #f56500;
+    border-bottom: 2px solid #b84c00;
+}
+
+a.btn--shadow {
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+
+.typing-btn {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1%;
+    padding: 5%;
+}
+
+/*--------------------POST--------------------*/
+#post-article .wrapper {
     margin: 3% auto;
     /*画面の中央に配置する*/
     padding: 0 4%;
@@ -134,68 +276,76 @@ main {
     justify-content: space-between;
 }
 
-/*　記事部分　*/
-main {
-    width: 74%;
+.post-section {
+    text-align: center;
 }
 
-.index-section {
+.post-section h3 {
+    position: relative;
+    display: inline-block;
+    padding: 0 45px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.post-section h3:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 44px;
+    height: 2px;
+    background-color: black;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+.post-section h3:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 44px;
+    height: 2px;
+    background-color: black;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+.post-section h3:before {
+    left: 0;
+}
+
+.post-section h3:after {
+    right: 0;
+}
+
+.post-section {
     margin-bottom: 4px;
     padding: 0 10px;
 }
 
-.index-section h1 {
-    font-size: 25px;
-    background-color: #cccccc;
-    text-align: center;
-    padding: 5px;
-    margin: 0 0 20px;
-    border-bottom: 1px solid #cccccc;
-}
-
-.index-section span {
-    font-weight: bold;
-}
-
-.index-section .wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
-.index-subsection {
-    border: solid 1px #cccccc;
-    /* 記事を罫線で囲む*/
-    border-radius: 2%;
-    padding: 10px 20px;
-    margin-bottom: 10px;
-    /*記事と記事の間に適切な余白*/
-}
-
-.index-subsection h3 {
-    font-size: 20px;
-    font-weight: bold;
+/*--------------------CREATE--------------------*/
+#create-main {
     text-align: center;
 }
 
-/*　サイドバー　*/
-#index-menu {
-    width: 22%;
+#create-main h2 {
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 2%;
 }
 
-#index-menu h2 {
-    text-align: center;
-    font-size: 20px;
+.login {
+    background-color: #f3f3f3;
+    margin: 0 3%;
+    padding: 2% 0;
+}
+
+.submit {
     font-weight: bold;
-}
-
-#index-menu li {
-    list-style: none;
-}
-
-.footer{
-    text-align: right;
-    margin-right: 10px;
-    margin-top: 30px;
-    font-size: 15px;
-    font-family: Georgia, serif;
+    background-color: #52d93f;
 }

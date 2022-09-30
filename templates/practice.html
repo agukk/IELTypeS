@@ -23,80 +23,35 @@
 
     <h1 class="page-title">IELTypeS</h1>
 
-
     <div class="card text-center">
-      <div class="card-header">
+      <div class="card-header" style="background-color: #154168; padding: 0 0 0.5% 0;">
         <ul class="nav nav-tabs card-header-tabs">
-          <li class="nav-item">
-            <a class="nav-link" href="/">TOP</a>
+          <li class="nav-item" style="width: 25%;">
+            <a class="nav-link" style="color: white;" href="/">TOP</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/guide">GUIDE</a>
+          <li class="nav-item" style="width: 25%;">
+            <a class="nav-link" style="color: white;" href="/guide">GUIDE</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="true" href="/practice">PRACTICE</a>
+          <li class="nav-item" style="width: 25%;">
+            <a class="nav-link active" style="color: #154168;" aria-current="true" href="/practice">PRACTICE</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/post">POST</a>
+          <li class="nav-item" style="width: 25%;">
+            <a class="nav-link" style="color: white;" href="/post">POST</a>
           </li>
         </ul>
       </div>
     </div>
   </header>
-  
-  <div id="cards" class="row row-cols-3 g-4" style="margin-top: 180px; margin-bottom: 290px;">
 
-    <div class="col" style="width: 18rem;">
-      <div class="card border-dark">
-        <div class="card-header">
-          タイピング形式
-        </div>
-        <div class="card-body">
-          <div class="card-title">
-            <h5>サンプルエッセイ</h5>
-          </div>
-          <div class="card-text">
-            <p>頻出の例文のタイピング練習ができます</p>
-          </div>
-          <input type="button" class="btn btn-primary" value="Get Started" onclick="location.href='/essay'">
-        </div>
-      </div>
-    </div>
-      
-    <div class="col" style="width: 18rem;">
-      <div class="card border-dark" style="max-width: 18rem;">
-        <div class="card-header">
-          タイピング形式
-        </div>
-        <div class="card-body">
-          <div class="card-title">
-            <h5>頻出単語</h5>
-          </div>
-          <div class="card-text">
-            <p>頻出の単語のタイピング練習ができます</p>
-          </div>
-          <input type="button" class="btn btn-primary" value="Get Started" onclick="location.href='/word'">
-        </div>
-      </div>
-    </div>
+  <div id="practice-main">
+    <h1 style="font-family: Alial">　Let’s Try！　</h1>
+  </div>
 
-    <div class="col" style="width: 18rem;">
-      <div class="card border-dark" style="max-width: 18rem;">
-        <div class="card-header">
-          タイピング形式
-        </div>
-        <div class="card-body">
-          <div class="card-title">
-            <h5>イディオム</h5>
-          </div>
-          <div class="card-text">
-            <p>頻出のイディオムのタイピング練習ができます</p>
-          </div>
-          <input type="button" class="btn btn-primary" value="Get Started" onclick="location.href='/idiom'">
-        </div>
-      </div>
-    </div>
-
+  <div class="typing-btn">
+    <a href="/idiom" class="btn btn--orange btn--cubic btn--shadow">イディオム</a>
+    <a href="/word" class="btn btn--orange btn--cubic btn--shadow">頻出単語</a>
+    <a href="/essay" class="btn btn--orange btn--cubic btn--shadow">エッセイ</a>
+  </div>
   </div>
   <footer class="footer">© 2022 IELTypeS</footer>
 </body>
