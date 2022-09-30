@@ -134,7 +134,7 @@ body {
 
 .result-details li:not(:first-child) {
     border-left: 1px solid #ccc;
-    padding-left: 60px;
+    padding-left: 24px;
 }
 
 .result-details li p {
