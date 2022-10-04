@@ -55,10 +55,6 @@ def practice():
 def idiom():
     return render_template("idiom.html")
 
-@app.route("/result", methods=["GET"])
-def result():
-    return render_template("result.html")
-
 @app.route("/word", methods=["GET"])
 def word():
     return render_template("word.html")
