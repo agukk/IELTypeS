@@ -61,6 +61,8 @@ main {
 /*----全ページ共通　フッター----*/
 .footer {
     text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-size: 15px;
     font-family: Georgia, serif;
 }
