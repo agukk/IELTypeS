@@ -60,9 +60,7 @@ main {
 
 /*----全ページ共通　フッター----*/
 .footer {
-    text-align: right;
-    margin-right: 10px;
-    margin-top: 0px;
+    text-align: center;
     font-size: 15px;
     font-family: Georgia, serif;
 }
