@@ -1,2 +1,2 @@
 # IELTypeS
-![サンプル画像](./images/IELTYPES.png)
+![サンプル画像](./static/images/IELTYPES.png)
