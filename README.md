@@ -1,6 +1,6 @@
 # [IELTypeS](https://ieltypes.herokuapp.com)
 ![サンプル画像](./static/images/IELTYPES.png)
-https://drive.google.com/file/d/1bzgBotVysD9uRYwfUmNJVwhPLpQUwrzt/view?usp=sharing
+[デモ動画](https://drive.google.com/file/d/1bzgBotVysD9uRYwfUmNJVwhPLpQUwrzt/view?usp=sharing)
 ## プロダクト概要
 IELTSコンピューターベースのWriting試験対策に用いることができるWebアプリケーションです。タイピングをしながら、IELTSの頻出単語・イディオム・エッセイでよく使われるセンテンスを学習をすることができます。
 ## IELTSとは?
