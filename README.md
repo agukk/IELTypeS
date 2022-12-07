@@ -17,7 +17,7 @@ IELTSのコンピューターベースのWriting試験対策に用いること�
 
 **開発人数** : 3人
 
-**使用技術** : JavaScript, HTML, CSS(Bootstrap), Flask(Python)
+**使用技術** : JavaScript, HTML, CSS(Bootstrap), Python(Flask)
 
 **自分の役割** : 企画・JSの部分
 
